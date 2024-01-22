@@ -39,6 +39,7 @@ public class MicroserviceController {
     MDC.put("arbitraryField", "custom-entry");
     // Use logger with log correlation
     // https://cloud.google.com/run/docs/logging#correlate-logs
-    logger.info("Hello London!");
+     logger.info("Structured logging example.");
+    return "Hello London!";
   }
 }
